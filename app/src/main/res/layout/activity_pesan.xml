@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".PesanActivity">
+
+    <TextView
+        android:id="@+id/getTxtNama"
+        android:text="Nama Kuliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/getTxtHarga"
+        android:text="Harga Makanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/getTxtLokasi"
+        android:text="Lokasi Kuliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/getTxtTempat"
+        android:text="Rumah Makan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/getImgKuliner"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+
+    <RatingBar
+        android:id="@+id/getRatingKuliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numStars="15"
+        android:rating="9"
+        android:stepSize="1.0"
+        style="?android:attr/ratingBarStyleSmall" />
+
+</LinearLayout>
