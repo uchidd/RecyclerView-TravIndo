@@ -2,21 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.fightercode.materirecyclerviewmembuatlistkulinerindonesia">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/icon_aplikasi"
+        android:label="TravIndo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainKulinerActivity" />
+        <activity android:name=".PesanActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PesanActivity"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainWisataActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".AboutDeveloperActivity" />
+        <activity android:name=".AboutAppActivity"></activity>
     </application>
 
 </manifest>

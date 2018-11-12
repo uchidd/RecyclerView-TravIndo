@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MenuActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="180dp"
+               android:layout_gravity="center"
+               android:src="@drawable/icon_aplikasi" />
+
+           <TextView
+               android:textAlignment="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="TravIndo"
+               android:fontFamily="sans-serif-smallcaps"
+               android:textStyle="bold"
+               android:textSize="45sp"
+               android:textColor="#fd9b1d"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="3dp"
+               android:layout_marginBottom="10dp"
+               android:background="#f58e0e"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:clipToPadding="false"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <android.support.v7.widget.CardView
+                   android:onClick="clickToKuliner"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <LinearLayout
+                       android:background="#fff"
+                       android:padding="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="128dp"
+                           android:layout_height="90dp"
+                           android:padding="10dp"
+                           android:src="@drawable/icon_kuliner" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:text="Kuliner Indonesia"
+                           android:textStyle="bold"
+                           android:textColor="#fd9b1d"/>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_margin="10dp"
+                           android:background="#f58e0e" />
+
+                   </LinearLayout>
+
+               </android.support.v7.widget.CardView>
+
+               <android.support.v7.widget.CardView
+                   android:onClick="clickToWisata"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <LinearLayout
+                       android:background="#fff"
+                       android:padding="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="128dp"
+                           android:layout_height="90dp"
+                           android:padding="10dp"
+                           android:src="@drawable/icon_wisata" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:text="Wisata Indonesia"
+                           android:textStyle="bold"
+                           android:textColor="#fd9b1d"/>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_margin="10dp"
+                           android:background="#f58e0e" />
+
+                   </LinearLayout>
+               </android.support.v7.widget.CardView>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:clipToPadding="false"
+               android:gravity="center"
+               android:orientation="horizontal">
+
+               <android.support.v7.widget.CardView
+                   android:onClick="clickToAboutDeveloper"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <LinearLayout
+                       android:background="#fff"
+                       android:padding="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="128dp"
+                           android:layout_height="90dp"
+                           android:padding="10dp"
+                           android:src="@drawable/icon_about_developer" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:text="About The Developer"
+                           android:textStyle="bold"
+                           android:textColor="#fd9b1d"/>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_margin="10dp"
+                           android:background="#f58e0e" />
+
+                   </LinearLayout>
+
+               </android.support.v7.widget.CardView>
+
+               <android.support.v7.widget.CardView
+                   android:onClick="clickToAboutApp"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <LinearLayout
+                       android:background="#fff"
+                       android:padding="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="128dp"
+                           android:layout_height="90dp"
+                           android:padding="10dp"
+                           android:src="@drawable/icon_about_app" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="10dp"
+                           android:text="About This App"
+                           android:textStyle="bold"
+                           android:textColor="#fd9b1d"/>
+
+                       <View
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_margin="10dp"
+                           android:background="#f58e0e" />
+
+                   </LinearLayout>
+               </android.support.v7.widget.CardView>
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>

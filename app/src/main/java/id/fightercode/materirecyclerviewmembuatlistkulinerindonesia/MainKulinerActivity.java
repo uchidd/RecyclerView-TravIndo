@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
+import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -14,7 +15,7 @@ import java.util.List;
 
 import id.fightercode.materirecyclerviewmembuatlistkulinerindonesia.adapter.AdapterListKuliner;
 
-public class MainActivity extends AppCompatActivity {
+public class MainKulinerActivity extends AppCompatActivity {
 
     private ArrayList<String> namaKuliner;
     private ArrayList<String> lokasiKuliner;
@@ -26,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle("List Kuliner Indonesia");
-        
+        setContentView(R.layout.activity_main_kuliner);
         initItemView();
     }
 
@@ -138,9 +137,16 @@ public class MainActivity extends AppCompatActivity {
         paketData.putInt("GAMBAR_MAKANAN", pushGambar);
         paketData.putInt("RATING_MAKANAN", pushRating);
 
-        Intent prosesKirim = new Intent(MainActivity.this, PesanActivity.class);
+        Intent prosesKirim = new Intent(MainKulinerActivity.this, PesanActivity.class);
         prosesKirim.putExtras(paketData);
         startActivity(prosesKirim);
         return;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(MainKulinerActivity.this, MenuActivity.class));
+        finish();
     }
 }
